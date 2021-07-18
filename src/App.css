@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex-start;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.weather {
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.city-name-input{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid black;
+  width: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.city-name-input:focus{
+  outline: none;
+}
+
+
+hr{
+  width: 600px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.cityError{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+}
+
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 998px;
+  margin-top: 52px;
 }
