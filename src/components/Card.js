@@ -1,9 +1,10 @@
 import './Card.css'
 
-function Card({title = "", temp = "", desc = "", ...rest}) {
+function Card({title = "",country="" ,temp = "", desc = "", ...rest}) {
     return(
         <div className='card' { ...rest }>
-            <span>{title}</span>
+            <span className="title" title={title}> {title}</span> 
+            <span>{country}</span>
             <span className="temp">{temp}°C</span>
             <span className="desc">{desc}</span>
         </div>

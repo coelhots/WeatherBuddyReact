@@ -1,15 +1,15 @@
 .card{
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 15px;
     border: 2px solid #adc4ee;
-    padding: 20px;
+    padding: 16px;
     box-shadow: 10px 10px 15px #888888;
     width: 125px;
     height: 125px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .temp{
@@ -17,6 +17,15 @@
 }
 
 .desc{
+    font-size: 14px;
     text-transform: capitalize;
     text-align: center;
+}
+
+.title {
+    text-align: center;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
