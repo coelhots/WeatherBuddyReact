@@ -22,11 +22,9 @@
 }
 
 .city-name-input{
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  border: none;
   border-bottom: 1px solid black;
-  width: 100px;
+  width: 105px;
   font-family: 'Andale Mono', monospace;
   font-weight: bold;
 }

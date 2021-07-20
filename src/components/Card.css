@@ -1,7 +1,6 @@
 .card{
-    font-weight: bold;
     border-radius: 15px;
-    border: 2px solid #adc4ee;
+    border: 1px solid #adc4ee;
     padding: 16px;
     box-shadow: 10px 10px 15px #888888;
     width: 125px;
@@ -9,17 +8,19 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .temp{
-    font-size: 36px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .desc{
-    font-size: 14px;
+    font-size: 13px;
     text-transform: capitalize;
-    text-align: center;
 }
 
 .title {
@@ -28,4 +29,5 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: bold;
 }

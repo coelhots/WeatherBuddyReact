@@ -101,14 +101,14 @@ console.log(lastCitiesInfo)
       )}
       {status === "sucess" && (
         <div className='card-container'>
-        <Card title = {currentCityInfo?.city + "-" +currentCityInfo?.country} temp={currentCityInfo?.temp_c} desc={currentCityInfo?.temp_desc}/>
+        <Card title = {currentCityInfo?.city + "-" + currentCityInfo?.country} icon={currentCityInfo?.icon_url} temp={currentCityInfo?.temp_c} desc={currentCityInfo?.temp_desc}/>
       </div>
 
       )}
 
       <div className='card-container'>
         {lastCitiesInfo.filter((c) => c.city !== currentCityInfo.city).map((c, index) => (
-          <Card key = {c.city} title = {c.city + "-" + c.country} temp={c.temp_c} desc={c.temp_desc}/>
+          <Card key = {c.city} title = {c.city + "-" + c.country} icon={c.icon_url} temp={c.temp_c} desc={c.temp_desc}/>
         ))}
       </div>
 
